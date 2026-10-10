@@ -7,8 +7,8 @@ Built for *Introduction to Database Systems*, Alexandria National University, Fa
 
 | Name | ID | Contribution |
 |------|----|--------------|
-| _Name 1_ | _ID_ | _e.g. database schema, back end (auth, to-do routes), tests_ |
-| _Name 2_ | _ID_ | _e.g. front end (templates, CSS, JavaScript validation), README, screenshots_ |
+|Amr Khalid Mohamed|2304120 |i made the whole repo but it looked bad so i gave it to an ai to improve it|
+
 
 ## 2. Technology
 
