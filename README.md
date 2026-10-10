@@ -7,7 +7,7 @@ Built for *Introduction to Database Systems*, Alexandria National University, Fa
 
 | Name | ID | Contribution |
 |------|----|--------------|
-|Amr Khalid Mohamed|2304120 |i made the whole repo but it looked bad so i gave it to an ai to improve it|
+|Amr Khalid Mohamed|2304120 |i made the whole repo except the frontend and tried in the backend but it looked bad so i gave it to an ai to improve it|
 
 
 ## 2. Technology
