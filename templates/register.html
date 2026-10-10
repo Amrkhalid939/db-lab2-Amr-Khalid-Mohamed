@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block main_class %}container narrow{% endblock %}
+{% block content %}
+<section class="card">
+  <h1>Create an account</h1>
+  <p class="muted">Sign up to start your to-do list.</p>
+  <form method="post" action="{{ url_for('register') }}" data-validate="register" novalidate>
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" maxlength="100" value="{{ form.name }}"
+           class="{{ 'invalid' if errors.name }}" autocomplete="name">
+    <p class="error" data-for="name">{{ errors.name or '' }}</p>
+
+    <label for="email">E-mail</label>
+    <input id="email" name="email" type="email" maxlength="255" value="{{ form.email }}"
+           class="{{ 'invalid' if errors.email }}" autocomplete="email">
+    <p class="error" data-for="email">{{ errors.email or '' }}</p>
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password"
+           class="{{ 'invalid' if errors.password }}" autocomplete="new-password">
+    <p class="error" data-for="password">{{ errors.password or '' }}</p>
+
+    <label for="confirm_password">Confirm password</label>
+    <input id="confirm_password" name="confirm_password" type="password"
+           class="{{ 'invalid' if errors.confirm_password }}" autocomplete="new-password">
+    <p class="error" data-for="confirm_password">{{ errors.confirm_password or '' }}</p>
+
+    <button class="btn btn-primary btn-block" type="submit">Register</button>
+  </form>
+  <p class="switch">Already have an account? <a href="{{ url_for('login') }}">Log in</a></p>
+</section>
+{% endblock %}
